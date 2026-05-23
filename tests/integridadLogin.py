@@ -6,6 +6,9 @@ import time
 def ejecutar_prueba_sistema(): 
     #Configurar navegador
     options =  Options()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(options=options)
     
     
